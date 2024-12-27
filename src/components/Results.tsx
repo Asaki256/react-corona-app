@@ -1,5 +1,7 @@
-import Loading from "../components/Loading"
-const Results = ({ countryData, loading }) => {
+import Loading from "./Loading"
+import {ResultType} from '../types'
+
+const Results = ({ countryData, loading }: ResultType) => {
   const { date, newConfirmed, newRecovered, totalConfirmed, totalRecovered } = countryData;
   // console.log(props.countryData);
   return (
